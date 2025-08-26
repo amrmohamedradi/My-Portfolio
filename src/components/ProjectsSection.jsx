@@ -6,7 +6,7 @@ const projects = [
     title: "(Amazon Clone)",
     description:
       "A full Amazon clone with a responsive design and core e-commerce functionalities.",
-    imageUrl: "/projects/project1.png",
+    imageUrl: "/projects/project1.webp",
     tags: ["HTML", "CSS", "JavaScript"],
     demoUrl: "https://amazon-store-dusky.vercel.app/",
     githubUrl: "https://github.com/amrmohamedradi/amazon-store",
@@ -14,8 +14,9 @@ const projects = [
   {
     id: 2,
     title: "Sportswear Store",
-    description: "A responsive sportswear store website with a clean, modern design.",
-    imageUrl: "/projects/project2.png",
+    description:
+      "A responsive sportswear store website with a clean, modern design.",
+    imageUrl: "/projects/project2.webp",
     tags: ["HTML", "CSS", "JavaScript"],
     demoUrl: "https://amigo-pied.vercel.app/",
     githubUrl: "https://github.com/amrmohamedradi/amigo",
@@ -23,8 +24,9 @@ const projects = [
   {
     id: 3,
     title: "Sportswear Collection",
-    description: "An online shop for sports apparel featuring sleek UI and smooth navigation.",
-    imageUrl: "/projects/project3.png",
+    description:
+      "An online shop for sports apparel featuring sleek UI and smooth navigation.",
+    imageUrl: "/projects/project3.webp",
     tags: ["HTML", "CSS", "JavaScript"],
     demoUrl: "https://legacy-store-coral.vercel.app/",
     githubUrl: "https://github.com/amrmohamedradi/legacy_store",
@@ -51,6 +53,7 @@ export const ProjectSection = () => {
             >
               <div className="h-48 overflow-hidden">
                 <img
+                  loading="lazy"
                   src={project.imageUrl}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
@@ -92,13 +95,13 @@ export const ProjectSection = () => {
           ))}
         </div>
         <div className="text-center mt-12">
-            <a
-                href="https://github.com/amrmohamedradi"
-                target="_blank"
-                className="cosmic-button w-fit flex items-center gap-2 mx-auto"
-            >
-                Check My GitHub <ArrowRight size={16}/>
-            </a>
+          <a
+            href="https://github.com/amrmohamedradi"
+            target="_blank"
+            className="cosmic-button w-fit flex items-center gap-2 mx-auto"
+          >
+            Check My GitHub <ArrowRight size={16} />
+          </a>
         </div>
       </div>
     </section>

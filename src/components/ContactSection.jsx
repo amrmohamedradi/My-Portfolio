@@ -82,7 +82,7 @@ export const ContactSection = () => {
                 </div>
                 <div>
                   <a className="text-muted-foreground hover:text-primary transition-colors text-center">
-                    Egypt, new Valley, Dakhla Oasis
+                    Egypt, New Valley, Dakhla Oasis
                   </a>
                 </div>
               </div>
